@@ -4,8 +4,6 @@ async function create(req, res) {
   const nameKey = req.body.name.toLowerCase()
   const existingRsvp = await Rsvp.findOne({ where: { name: nameKey } })
 
-  console.log(existingRsvp)
-
   if (existingRsvp) {
     existingRsvp.name = nameKey
     existingRsvp.email = req.body.email
