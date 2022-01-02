@@ -3,7 +3,7 @@ const express = require('express')
 const morgan = require('morgan')
 const api = require('./api')
 
-const port = process.env.NODE_ENV === 'development' ? 5000 : 443
+const port = 5000
 
 const app = express()
 
