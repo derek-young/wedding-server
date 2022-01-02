@@ -18,4 +18,6 @@ app.use(morgan('tiny'))
 
 app.use('/api', api)
 
-app.listen(port)
+app.listen(port, () => {
+  console.log(`Listening at port: ${port}`)
+})
