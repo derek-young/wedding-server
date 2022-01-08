@@ -37,6 +37,13 @@ async function create(req, res) {
   }
 }
 
+async function get(req, res) {
+  const rsvps = await Rsvp.findAll()
+
+  res.end(JSON.stringify(rsvps))
+}
+
 module.exports = {
   create,
+  get,
 }
