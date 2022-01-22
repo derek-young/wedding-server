@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "list": "pm2 list",
     "start": "NODE_ENV=development nodemon index.js",
     "start:prod": "pm2 start index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
